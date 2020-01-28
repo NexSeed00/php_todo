@@ -57,7 +57,7 @@ $tasks = $stmt->fetchAll();
                             </p>
                             <div class="text-right d-flex justify-content-end">
                                 <a href="edit.php?id=<?= h($task['id']); ?>" class="btn text-success">EDIT</a>
-                                <form action="delete.php" action="post">
+                                <form action="delete.php" method="post">
                                     <input type="hidden" name="id" value="<?= h($task['id']); ?>">
                                     <button type="submit" class="btn text-danger">DELETE</button>
                                 </form>
